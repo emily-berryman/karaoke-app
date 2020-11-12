@@ -1,9 +1,13 @@
 import React from 'react'
+import AddSong from  './AddSong'
 
 const App = () => {
   return (
-    <h1>React development has begun!</h1>
+    <AddSong />
+
   )
 }
+
+
 
 export default App
