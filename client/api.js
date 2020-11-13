@@ -21,3 +21,23 @@ export function searchForVid(query){
 }
 
 
+// title is the query state
+
+export function addSongToList(urlFromDisplayedVid, title){
+  // here is the post request that needs to add something to the song database in specified format
+  return request.post('/songs')
+  .send(
+    {
+      "title": title,
+      "URL": urlFromDisplayedVid
+   }
+  )
+  .then(response => response.body)
+}
+
+export function getSongsList(){
+
+  return request.get('/songs')
+  .then(response => response.body)
+
+}
