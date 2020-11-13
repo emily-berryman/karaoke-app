@@ -1,5 +1,6 @@
 import React from 'react'
-import AddSong from  './AddSong'
+import SongList from './SongList'
+
 
 import GetYoutubeVid from './GetYoutubeVid'
 import {searchForVid} from '../api'
@@ -7,9 +8,9 @@ import {searchForVid} from '../api'
 const App = () => {
   return (
     <div className="page-container">
-      <h1>React development has begun!</h1>
-      <AddSong />
+    
       <GetYoutubeVid />
+      <SongList />
       {/* {searchForVid()} */}
     </div>
   )

@@ -14,4 +14,9 @@ router.get('/', (req, res) => {
     })
 })
 
+router.post('/', (req, res) => {
+  const newSong = req.body
+  db.createSongEntry(newSong)
+  .then(() => res.json(newSong))
+})
 module.exports = router
