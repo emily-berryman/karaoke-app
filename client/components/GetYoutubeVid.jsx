@@ -1,13 +1,14 @@
 import React from "react";
 import { search } from "superagent";
 
-import { searchForVid} from "../api";
+import { addSongToList, searchForVid} from "../api";
 
 class GetYoutubeVid extends React.Component {
   state = {
     vidToRender: null,
     query: ''
   }
+
 
   handleChange = (evt) => {
     this.setState({
@@ -23,7 +24,9 @@ class GetYoutubeVid extends React.Component {
       this.setState({
         vidToRender: dataFromSearchForVidFunction
       })
+      addSongToList(dataFromSearchForVidFunction, this.state.query)
     })
+   
   }
 
   renderVid = () => {
@@ -40,7 +43,11 @@ class GetYoutubeVid extends React.Component {
   render(){
     return (
       <>
+<<<<<<< HEAD
 
+=======
+     
+>>>>>>> 6170bf48571cda3331bee7e2dc9ae11dde1c7996
       <form onSubmit={this.submit}>
 
         <label htmlFor="videoSearch"></label>
