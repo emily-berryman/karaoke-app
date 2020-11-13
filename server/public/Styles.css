@@ -1,0 +1,69 @@
+body{
+    text-align: center;
+}
+
+
+.Logo {
+font-family: 'Roboto', sans-serif;
+font-size: 100px;
+text-align: center;
+color: rgba(81, 134, 237, 1);
+}
+
+.text-button{
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(6, 7, 222, 1);
+    border-style: none;
+    background-color: white;
+}
+
+
+
+.button-style{
+    height: 61.230369567871094px;
+    width: 267.2622985839844px;
+    align-items: center;
+    border-radius: 2px;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(98, 101, 106, 1);
+    border-style: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+
+}
+
+
+.form-style{
+    border: 0.83px solid rgba(0, 0, 0, 1);
+    width: 959px;
+    height: 77.78px;
+    box-sizing: border-box;
+    border-radius: 82.7437px;
+    font-weight: bold;
+    font-family: Roboto;
+    text-align: center;
+    font-size: 24px;
+}
+
+.form-style:focus{
+    outline: none;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: medium;
+  }

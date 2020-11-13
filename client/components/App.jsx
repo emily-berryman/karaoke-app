@@ -7,9 +7,10 @@ import {searchForVid} from '../api'
 const App = () => {
   return (
     <div className="page-container">
-      <h1>React development has begun!</h1>
-      <AddSong />
+      <h1 className = 'Logo' >Google Sounds</h1>
       <GetYoutubeVid />
+     <AddSong />
+ 
       {/* {searchForVid()} */}
     </div>
   )
