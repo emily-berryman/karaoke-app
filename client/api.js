@@ -1,6 +1,6 @@
 import request from 'superagent'
 
-const youtubeAPI = `https://www.googleapis.com/youtube/v3/search?key=AIzaSyDsnTtMOS3SLeB0s6zMH4dT7T5os-xtWCM&part=snippet&type=video&maxResults=1&q='lyrics '`
+const youtubeAPI = `https://www.googleapis.com/youtube/v3/search?key=AIzaSyDsnTtMOS3SLeB0s6zMH4dT7T5os-xtWCM&part=snippet&videoEmbeddable=true&type=video&maxResults=1&q='karaoke '`
 
 
 

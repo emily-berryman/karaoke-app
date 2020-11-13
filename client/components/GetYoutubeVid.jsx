@@ -31,8 +31,8 @@ class GetYoutubeVid extends React.Component {
 
   return (
     <>
-      <iframe width="420" height="315"
-      src={`https://www.youtube.com/embed/${this.state.vidToRender}`}> </iframe> 
+      <iframe width="854" height="480"
+      src={`https://www.youtube.com/embed/${this.state.vidToRender}?autoplay=1`}> </iframe> 
     </>
    )}
   
@@ -48,6 +48,8 @@ class GetYoutubeVid extends React.Component {
       </form>
 
       {this.state.vidToRender && this.renderVid()}
+
+      
       </>
     )
   }
