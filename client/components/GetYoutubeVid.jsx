@@ -39,20 +39,29 @@ class GetYoutubeVid extends React.Component {
     </>
    )}
   
-  
+ 
   render(){
     return (
       <>
+<<<<<<< HEAD
+
+=======
      
+>>>>>>> 6170bf48571cda3331bee7e2dc9ae11dde1c7996
       <form onSubmit={this.submit}>
-        <label htmlFor="videoSearch">Tell us your favourite song</label>
-        <input type="search" name="vidSearchBar" onChange={this.handleChange}/>
-        <input type="submit" value="search" onClick={this.submit}/>
+
+        <label htmlFor="videoSearch"></label>
+
+        <input className ='form-style 'type="search" name="vidSearchBar" onChange={this.handleChange} autoFocus={true}/>
+
+        <br/> 
+
+        <input className = 'button-style' type="submit" value="Let me sing this" onClick={this.submit} />
+
       </form>
 
       {this.state.vidToRender && this.renderVid()}
 
-      
       </>
     )
   }

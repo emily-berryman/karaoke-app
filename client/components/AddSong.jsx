@@ -2,7 +2,7 @@ import React from 'react'
 
 const AddSong = (props) => {
 return (
-  <button onClick={props.addSong}>
+  <button className='text-button' onClick={props.addSong}>
   Add Song
 </button>
 )
