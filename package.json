@@ -12,7 +12,7 @@
     "dev:client": "webpack --watch",
     "dev:server": "nodemon server",
     "start": "run-s build server",
-    "build": "webpack && knex migrate:latest",
+    "build": "webpack && knex --knexfile server/db/knexfile.js migrate:latest",
     "server": "node server",
     "test": "jest --watchAll",
     "knex": "knex --knexfile server/db/knexfile.js"
